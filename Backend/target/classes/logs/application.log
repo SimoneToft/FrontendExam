@@ -1,0 +1,674 @@
+297484 [JettyServerThreadPool-54] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Malformed JSON Supplied
+387849 [JettyServerThreadPool-60] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Malformed JSON Supplied
+469220 [JettyServerThreadPool-77] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Role not valid
+5000048 [JettyServerThreadPool-94] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+5007227 [JettyServerThreadPool-75] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+346633 [JettyServerThreadPool-70] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Error coercing value
+352482 [JettyServerThreadPool-70] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Error coercing value
+355305 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Error coercing value
+383229 [JettyServerThreadPool-74] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Error coercing value
+389415 [JettyServerThreadPool-74] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Error coercing value
+395430 [JettyServerThreadPool-74] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Error coercing value
+398954 [JettyServerThreadPool-70] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Error coercing value
+546809 [JettyServerThreadPool-61] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Error coercing value
+580624 [JettyServerThreadPool-59] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Error coercing value
+49716 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Error coercing value
+4675 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Error coercing value
+23858 [JettyServerThreadPool-69] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Error coercing value
+58803 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Error coercing value
+62692 [JettyServerThreadPool-57] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Index 3 out of bounds for length 3
+94722 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Index 3 out of bounds for length 3
+12803 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 JDBC exception executing SQL [select u1_0.user_name,c1_0.cart_id,c2_0.cart_id,c2_0.product_id,c2_0.item_amount,p1_0.product_id,o1_0.product_id,o1_0.item_amount,o1_0.order_id,o2_0.order_id,o2_0.user_id,u2_0.user_name,r1_0.user_name,r1_1.role_name,u2_0.user_id,u2_0.user_password,p1_0.product_name,p1_0.product_price,r2_0.user_name,r2_1.role_name,u1_0.user_id,u1_0.user_password from users u1_0 left join carts c1_0 on u1_0.user_name=c1_0.user_id left join cart_item c2_0 on c1_0.cart_id=c2_0.cart_id left join products p1_0 on p1_0.product_id=c2_0.product_id left join order_item o1_0 on p1_0.product_id=o1_0.product_id left join orders o2_0 on o2_0.order_id=o1_0.order_id left join users u2_0 on u2_0.user_name=o2_0.user_id left join (user_roles r1_0 join roles r1_1 on r1_1.role_name=r1_0.role_name) on u2_0.user_name=r1_0.user_name left join (user_roles r2_0 join roles r2_1 on r2_1.role_name=r2_0.role_name) on u1_0.user_name=r2_0.user_name where u1_0.user_name=?] [ERROR: operator does not exist: character varying = integer
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 402] [n/a]
+42379 [JettyServerThreadPool-69] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 JDBC exception executing SQL [select u1_0.user_name,c1_0.cart_id,c2_0.cart_id,c2_0.product_id,c2_0.item_amount,p1_0.product_id,o1_0.product_id,o1_0.item_amount,o1_0.order_id,o2_0.order_id,o2_0.user_id,u2_0.user_name,r1_0.user_name,r1_1.role_name,u2_0.user_id,u2_0.user_password,p1_0.product_name,p1_0.product_price,r2_0.user_name,r2_1.role_name,u1_0.user_id,u1_0.user_password from users u1_0 left join carts c1_0 on u1_0.user_name=c1_0.user_id left join cart_item c2_0 on c1_0.cart_id=c2_0.cart_id left join products p1_0 on p1_0.product_id=c2_0.product_id left join order_item o1_0 on p1_0.product_id=o1_0.product_id left join orders o2_0 on o2_0.order_id=o1_0.order_id left join users u2_0 on u2_0.user_name=o2_0.user_id left join (user_roles r1_0 join roles r1_1 on r1_1.role_name=r1_0.role_name) on u2_0.user_name=r1_0.user_name left join (user_roles r2_0 join roles r2_1 on r2_1.role_name=r2_0.role_name) on u1_0.user_name=r2_0.user_name where u1_0.user_name=?] [ERROR: operator does not exist: character varying = integer
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 402] [n/a]
+3656 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 JDBC exception executing SQL [select u1_0.user_name,c1_0.cart_id,c2_0.cart_id,c2_0.product_id,c2_0.item_amount,p1_0.product_id,o1_0.product_id,o1_0.item_amount,o1_0.order_id,o2_0.order_id,o2_0.user_id,u2_0.user_name,r1_0.user_name,r1_1.role_name,u2_0.user_id,u2_0.user_password,p1_0.product_name,p1_0.product_price,r2_0.user_name,r2_1.role_name,u1_0.user_id,u1_0.user_password from users u1_0 left join carts c1_0 on u1_0.user_name=c1_0.user_id left join cart_item c2_0 on c1_0.cart_id=c2_0.cart_id left join products p1_0 on p1_0.product_id=c2_0.product_id left join order_item o1_0 on p1_0.product_id=o1_0.product_id left join orders o2_0 on o2_0.order_id=o1_0.order_id left join users u2_0 on u2_0.user_name=o2_0.user_id left join (user_roles r1_0 join roles r1_1 on r1_1.role_name=r1_0.role_name) on u2_0.user_name=r1_0.user_name left join (user_roles r2_0 join roles r2_1 on r2_1.role_name=r2_0.role_name) on u1_0.user_name=r2_0.user_name where u1_0.user_name=?] [ERROR: operator does not exist: character varying = integer
+  Hint: No operator matches the given name and argument types. You might need to add explicit type casts.
+  Position: 402] [n/a]
+12425 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - POST /api/v1/products 200 Invalid serialized unsecured/JWS/JWE object: Missing part delimiters
+28881 [JettyServerThreadPool-57] ERROR dk.lyngby.routes.Routes - POST /api/v1/products 200 Invalid serialized unsecured/JWS/JWE object: Missing part delimiters
+262646 [JettyServerThreadPool-60] ERROR dk.lyngby.routes.Routes - POST /api/v1/products 200 Invalid serialized unsecured/JWS/JWE object: Missing part delimiters
+356112 [JettyServerThreadPool-59] ERROR dk.lyngby.routes.Routes - POST /api/v1/products 200 Invalid serialized unsecured/JWS/JWE object: Missing part delimiters
+195337 [JettyServerThreadPool-69] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+197127 [JettyServerThreadPool-55] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+217031 [JettyServerThreadPool-55] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+220782 [JettyServerThreadPool-69] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+227653 [JettyServerThreadPool-69] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+46774 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - POST /api/v1/products 200 Token is expired
+59732 [JettyServerThreadPool-60] ERROR dk.lyngby.routes.Routes - POST /api/v1/products 200 not-null property references a null or transient value : dk.lyngby.model.Product.cart
+28347 [JettyServerThreadPool-55] ERROR dk.lyngby.routes.Routes - POST /api/v1/products 200 {
+  "productName": "Angelfish",
+  "productPrice": 7
+}
+16375 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/products 200 {
+  "productName": "Angelfish",
+  "productPrice": 7
+}
+194667 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products 200 'cartId' is not a valid path-param for '//carts/{id}/products/'.
+209203 [JettyServerThreadPool-60] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products 200 'cartId' is not a valid path-param for '//carts/{id}/products/'.
+222755 [JettyServerThreadPool-59] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products 200 'cartId' is not a valid path-param for '//carts/{id}/products/'.
+243287 [JettyServerThreadPool-61] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products 200 'cartId' is not a valid path-param for '//carts/{id}/products/'.
+245452 [JettyServerThreadPool-64] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products 200 'cartId' is not a valid path-param for '//carts/{id}/products/'.
+65916 [JettyServerThreadPool-55] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products 200 'productId' is not a valid path-param for '//carts/{id}/products/'.
+620687 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products 200 'productId' is not a valid path-param for '//carts/{id}/products/'.
+699777 [JettyServerThreadPool-57] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts 200 No serializer found for class dk.lyngby.dto.CartDTO and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: java.util.ArrayList[0])
+37712 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products 200 'productId' is not a valid path-param for '//carts/{id}/products/'.
+48681 [JettyServerThreadPool-59] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts 200 No serializer found for class dk.lyngby.dto.CartDTO and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: java.util.ArrayList[0])
+14534 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts 200 Infinite recursion (StackOverflowError) (through reference chain: dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["cart"])
+14376 [JettyServerThreadPool-55] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts 200 failed to lazily initialize a collection of role: dk.lyngby.model.Cart.cart_products: could not initialize proxy - no Session (through reference chain: java.util.ArrayList[0]->dk.lyngby.dto.CartDTO["cart_items"])
+63976 [JettyServerThreadPool-57] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products 200 'productId' is not a valid path-param for '//carts/{id}/products/'.
+72776 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts 200 failed to lazily initialize a collection of role: dk.lyngby.model.Cart.cart_products: could not initialize proxy - no Session (through reference chain: java.util.ArrayList[0]->dk.lyngby.dto.CartDTO["cart_items"])
+101366 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products 200 'productId' is not a valid path-param for '//carts/{id}/products/'.
+109110 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products 200 'productId' is not a valid path-param for '//carts/{id}/products/'.
+34968 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts 200 failed to lazily initialize a collection of role: dk.lyngby.model.Product.carts: could not initialize proxy - no Session (through reference chain: java.util.ArrayList[0]->dk.lyngby.dto.CartDTO["cart_items"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Product["carts"])
+40188 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts 200 failed to lazily initialize a collection of role: dk.lyngby.model.Product.carts: could not initialize proxy - no Session (through reference chain: java.util.ArrayList[0]->dk.lyngby.dto.CartDTO["cart_items"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Product["carts"])
+40921 [JettyServerThreadPool-60] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts 200 failed to lazily initialize a collection of role: dk.lyngby.model.Product.carts: could not initialize proxy - no Session (through reference chain: java.util.ArrayList[0]->dk.lyngby.dto.CartDTO["cart_items"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Product["carts"])
+13345 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+26634 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+5335 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+11578 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+15460 [JettyServerThreadPool-57] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+37420 [JettyServerThreadPool-59] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/1 200 
+24035 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/1 200 
+32881 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/1 200 
+29967 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts 200 failed to lazily initialize a collection of role: dk.lyngby.model.Product.carts: could not initialize proxy - no Session (through reference chain: java.util.ArrayList[0]->dk.lyngby.dto.CartDTO["cart_items"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Product["carts"])
+46917 [JettyServerThreadPool-60] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/1 200 Invalid token
+59681 [JettyServerThreadPool-59] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/1 200 Invalid token
+66246 [JettyServerThreadPool-61] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts 200 failed to lazily initialize a collection of role: dk.lyngby.model.Product.carts: could not initialize proxy - no Session (through reference chain: java.util.ArrayList[0]->dk.lyngby.dto.CartDTO["cart_items"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Product["carts"])
+80534 [JettyServerThreadPool-65] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts 200 failed to lazily initialize a collection of role: dk.lyngby.model.Product.carts: could not initialize proxy - no Session (through reference chain: java.util.ArrayList[0]->dk.lyngby.dto.CartDTO["cart_items"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Product["carts"])
+20724 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts 200 failed to lazily initialize a collection of role: dk.lyngby.model.User.orders: could not initialize proxy - no Session (through reference chain: java.util.ArrayList[0]->dk.lyngby.dto.CartDTO["cart_items"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Product["carts"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["orders"])
+12286 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts 200 failed to lazily initialize a collection of role: dk.lyngby.model.Role.userList: could not initialize proxy - no Session (through reference chain: java.util.ArrayList[0]->dk.lyngby.dto.CartDTO["cart_items"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Product["carts"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["roleList"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Role["userList"])
+12001 [JettyServerThreadPool-55] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts 200 failed to lazily initialize a collection of role: dk.lyngby.model.Role.userList: could not initialize proxy - no Session (through reference chain: java.util.ArrayList[0]->dk.lyngby.dto.CartDTO["cart_items"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Product["carts"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["roleList"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Role["userList"])
+13921 [JettyServerThreadPool-57] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts 200 failed to lazily initialize a collection of role: dk.lyngby.model.Role.userList: could not initialize proxy - no Session (through reference chain: java.util.ArrayList[0]->dk.lyngby.dto.CartDTO["cart_items"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Product["carts"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["roleList"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Role["userList"])
+19027 [JettyServerThreadPool-59] ERROR dk.lyngby.routes.Routes - POST /api/v1/products 200 {
+  "productName": "Angelfish",
+  "productPrice": 7
+}
+23919 [JettyServerThreadPool-61] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts 200 failed to lazily initialize a collection of role: dk.lyngby.model.Role.userList: could not initialize proxy - no Session (through reference chain: java.util.ArrayList[0]->dk.lyngby.dto.CartDTO["cart_items"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Product["carts"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Cart["user"]->dk.lyngby.model.User["roleList"]->org.hibernate.collection.spi.PersistentSet[0]->dk.lyngby.model.Role["userList"])
+732559 [JettyServerThreadPool-78] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/2 200 Invalid token
+765054 [JettyServerThreadPool-61] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/2 200 Invalid token
+777833 [JettyServerThreadPool-65] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/1 200 Invalid token
+789014 [JettyServerThreadPool-72] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/1/ 200 Invalid token
+789996 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/1/ 200 Invalid token
+792298 [JettyServerThreadPool-69] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/1/ 200 Invalid token
+1297375 [JettyServerThreadPool-80] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/user 200 
+1363080 [JettyServerThreadPool-54] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/user 200 
+1363082 [JettyServerThreadPool-59] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/user 200 
+22704 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+30715 [JettyServerThreadPool-57] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+33230 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+34135 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+24110 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+10697 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+18423 [JettyServerThreadPool-55] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+183911 [JettyServerThreadPool-69] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+25028 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+121932 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Error coercing value
+126775 [JettyServerThreadPool-57] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Error coercing value
+142855 [JettyServerThreadPool-59] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Error coercing value
+286559 [JettyServerThreadPool-70] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+292992 [JettyServerThreadPool-61] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Error coercing value
+314842 [JettyServerThreadPool-65] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Error coercing value
+980230 [JettyServerThreadPool-55] ERROR dk.lyngby.routes.Routes - POST /api/v1/products 200 Invalid serialized unsecured/JWS/JWE object: Missing part delimiters
+996516 [JettyServerThreadPool-73] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/1/ 200 Invalid serialized unsecured/JWS/JWE object: Missing part delimiters
+1000105 [JettyServerThreadPool-72] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/2/products/1 200 Invalid serialized unsecured/JWS/JWE object: Missing part delimiters
+1792203 [JettyServerThreadPool-65] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/user 200 
+1792429 [JettyServerThreadPool-54] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/user 200 
+3311359 [JettyServerThreadPool-72] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/user 200 
+9751 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+16263 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+691774 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+692668 [JettyServerThreadPool-74] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+813069 [JettyServerThreadPool-61] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+1041911 [JettyServerThreadPool-60] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+1068523 [JettyServerThreadPool-79] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+1259922 [JettyServerThreadPool-64] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+1259924 [JettyServerThreadPool-82] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+1353661 [JettyServerThreadPool-54] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/1 200 Invalid serialized unsecured/JWS/JWE object: Missing part delimiters
+1479902 [JettyServerThreadPool-75] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+1500608 [JettyServerThreadPool-75] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+1518088 [JettyServerThreadPool-75] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+1518094 [JettyServerThreadPool-54] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+1566005 [JettyServerThreadPool-55] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+1566008 [JettyServerThreadPool-74] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+1639592 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+1639595 [JettyServerThreadPool-57] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+1828325 [JettyServerThreadPool-65] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+1828328 [JettyServerThreadPool-80] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+1837655 [JettyServerThreadPool-65] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+1837659 [JettyServerThreadPool-80] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+2043814 [JettyServerThreadPool-64] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+2043815 [JettyServerThreadPool-81] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+2052903 [JettyServerThreadPool-64] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+2052905 [JettyServerThreadPool-81] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+2082382 [JettyServerThreadPool-81] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+2170944 [JettyServerThreadPool-73] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+2211605 [JettyServerThreadPool-73] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+2211608 [JettyServerThreadPool-54] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/[object%20Promise] 200 
+2307822 [JettyServerThreadPool-74] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+2369256 [JettyServerThreadPool-97] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+2436145 [JettyServerThreadPool-84] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+2458824 [JettyServerThreadPool-55] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+2512551 [JettyServerThreadPool-85] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+2603766 [JettyServerThreadPool-100] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+2634785 [JettyServerThreadPool-84] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+2634787 [JettyServerThreadPool-95] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+2666315 [JettyServerThreadPool-101] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+2774048 [JettyServerThreadPool-81] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+2814134 [JettyServerThreadPool-81] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+2829570 [JettyServerThreadPool-81] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+2914698 [JettyServerThreadPool-100] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+2984064 [JettyServerThreadPool-97] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+3081895 [JettyServerThreadPool-55] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+3107896 [JettyServerThreadPool-55] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+3146905 [JettyServerThreadPool-55] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+3414902 [JettyServerThreadPool-65] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+3626901 [JettyServerThreadPool-64] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+3647266 [JettyServerThreadPool-84] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+3647268 [JettyServerThreadPool-64] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts/()%20=%3E%20%20%20%20%7B%20%20%20%20%20%20%20%20return%20localStorage.getItem('cartId')%20%20%20%20%7D 200 
+3705860 [JettyServerThreadPool-73] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/2/products/1 200 You are not authorized to perform this action
+3715296 [JettyServerThreadPool-74] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/2/products/1 200 You are not authorized to perform this action
+4959 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/products 200 could not execute statement [ERROR: column "product_category" of relation "products" does not exist
+  Position: 78] [/* insert for dk.lyngby.model.Product */insert into products (order_order_id,product_category,product_name,product_price,product_text) values (?,?,?,?,?)]
+20126 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+1509402 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/products 200 {
+  "productName": "Clownfish",
+  "productPrice": 15,
+  "productCategory": "Fish",
+  "productText": "Amphiprioninae"
+}
+4507 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/products 200 {
+  "productName": "Clownfish",
+  "productPrice": 15,
+  "productCategory": "Fish",
+  "productText": "Amphiprioninae"
+}
+22624 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+62280 [JettyServerThreadPool-60] ERROR dk.lyngby.routes.Routes - POST /api/v1/products 200 not-null property references a null or transient value : dk.lyngby.model.Product.productImage
+1599101 [JettyServerThreadPool-77] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/null/products/[object%20Object] 200 Invalid serialized unsecured/JWS/JWE object: Missing part delimiters
+1689804 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/null/products/[object%20Object] 200 Invalid serialized unsecured/JWS/JWE object: Missing part delimiters
+1698260 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+1703546 [JettyServerThreadPool-59] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+1713685 [JettyServerThreadPool-59] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 
+1713685 [JettyServerThreadPool-59] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 Index 0 out of bounds for length 0
+1755447 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 
+1755447 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 Index 0 out of bounds for length 0
+1787654 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 
+1787655 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 Index 0 out of bounds for length 0
+1801542 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 
+1801542 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 Index 0 out of bounds for length 0
+1803126 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 
+1803126 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 Index 0 out of bounds for length 0
+1804571 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 
+1804572 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 Index 0 out of bounds for length 0
+1806040 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 
+1806040 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 Index 0 out of bounds for length 0
+1807414 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 
+1807414 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 Index 0 out of bounds for length 0
+1810757 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 
+1810757 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 Index 0 out of bounds for length 0
+1816777 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 
+1816777 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 Index 0 out of bounds for length 0
+1832827 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 
+1832827 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 Index 0 out of bounds for length 0
+1836198 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 
+1836198 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/[object%20Object] 200 Index 0 out of bounds for length 0
+2173880 [JettyServerThreadPool-79] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/undefined 200 
+2173880 [JettyServerThreadPool-79] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/1/products/undefined 200 Index 0 out of bounds for length 0
+2251720 [JettyServerThreadPool-97] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/2/products/undefined 200 You are not authorized to perform this action
+2268707 [JettyServerThreadPool-78] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/2/products/2 200 You are not authorized to perform this action
+2609876 [JettyServerThreadPool-69] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/2/products/undefined 200 
+2609877 [JettyServerThreadPool-69] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/2/products/undefined 200 Index 0 out of bounds for length 0
+9222884 [JettyServerThreadPool-127] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/2/products/undefined 200 Token is expired
+9223814 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/2/products/undefined 200 Token is expired
+9224839 [JettyServerThreadPool-126] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/2/products/undefined 200 Token is expired
+9086 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+15188 [JettyServerThreadPool-57] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+22236 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+34648 [JettyServerThreadPool-58] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+35576 [JettyServerThreadPool-61] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+40064 [JettyServerThreadPool-60] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+7696 [JettyServerThreadPool-71] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+19883 [JettyServerThreadPool-56] ERROR dk.lyngby.routes.Routes - GET /api/v1/carts 200 Cannot invoke "dk.lyngby.model.User.getUsername()" because "user" is null
+9135032 [JettyServerThreadPool-115] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+10251198 [JettyServerThreadPool-54] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+16350303 [JettyServerThreadPool-116] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/2/products/3 200 Token is expired
+16356020 [JettyServerThreadPool-116] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+16365337 [JettyServerThreadPool-116] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+16399264 [JettyServerThreadPool-127] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+17006372 [JettyServerThreadPool-171] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/2/products/undefined 200 
+17006373 [JettyServerThreadPool-171] ERROR dk.lyngby.routes.Routes - POST /api/v1/carts/2/products/undefined 200 Index 0 out of bounds for length 0
+21786737 [JettyServerThreadPool-60] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+21789226 [JettyServerThreadPool-60] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+22736066 [JettyServerThreadPool-207] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+22871590 [JettyServerThreadPool-170] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+23445851 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+29079319 [JettyServerThreadPool-260] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+29439907 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+31090114 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31090114 [JettyServerThreadPool-263] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31092791 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31092791 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31093422 [JettyServerThreadPool-263] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31093422 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31094647 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31094647 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31096135 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31096136 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31096847 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31096847 [JettyServerThreadPool-263] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31097691 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31097692 [JettyServerThreadPool-263] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31104661 [JettyServerThreadPool-263] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31104662 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31114663 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31114664 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31124656 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31124656 [JettyServerThreadPool-263] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31134656 [JettyServerThreadPool-263] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31134657 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31144670 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31144671 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31154655 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31154655 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31164655 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31164655 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31174658 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31174659 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31184664 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31184665 [JettyServerThreadPool-263] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31194668 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31194668 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31204673 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31204675 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31214662 [JettyServerThreadPool-263] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31214662 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31224664 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31224665 [JettyServerThreadPool-263] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31234668 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31234668 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31237903 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31237903 [JettyServerThreadPool-263] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31238741 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31238747 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31244657 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31244657 [JettyServerThreadPool-263] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31250753 [JettyServerThreadPool-263] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31250753 [JettyServerThreadPool-224] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31254656 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31254657 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31265092 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31265092 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31275097 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31275099 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31285094 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31285095 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31295096 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31295097 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31305098 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31305110 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31315085 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31315085 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31324918 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31324919 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31334655 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31334655 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31344654 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31344654 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31354670 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31354670 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31364656 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31364657 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31374666 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31374667 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31384673 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31384674 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31394673 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31394673 [JettyServerThreadPool-288] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31404666 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31404667 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31426364 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31426364 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31436379 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31436379 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31444940 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31444940 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31445993 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31445993 [JettyServerThreadPool-288] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31447485 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31447485 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31448935 [JettyServerThreadPool-288] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31448935 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31449568 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31449568 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31449825 [JettyServerThreadPool-288] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31449825 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31450105 [JettyServerThreadPool-288] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31450105 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31450525 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31450527 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31451552 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31451553 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31451990 [JettyServerThreadPool-288] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31451990 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31452737 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31452737 [JettyServerThreadPool-288] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31455111 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31455111 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31457572 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31457572 [JettyServerThreadPool-225] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31465106 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31465106 [JettyServerThreadPool-288] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31475107 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31475107 [JettyServerThreadPool-288] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31485118 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31485118 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31495115 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31495115 [JettyServerThreadPool-225] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31505121 [JettyServerThreadPool-225] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31505121 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31506571 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31506572 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31506584 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31506585 [JettyServerThreadPool-225] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31506599 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31506600 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31512816 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31512816 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31512951 [JettyServerThreadPool-225] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31512951 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31512989 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31512992 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31513006 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31513009 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31514032 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31514032 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31514037 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31514037 [JettyServerThreadPool-225] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31514039 [JettyServerThreadPool-166] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31514040 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31514044 [JettyServerThreadPool-225] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31514044 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31515004 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31515004 [JettyServerThreadPool-284] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31515005 [JettyServerThreadPool-246] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31515004 [JettyServerThreadPool-166] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31515012 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31515012 [JettyServerThreadPool-246] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31515017 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31515017 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31518741 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31518742 [JettyServerThreadPool-225] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31518742 [JettyServerThreadPool-246] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31518744 [JettyServerThreadPool-280] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31522952 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31522952 [JettyServerThreadPool-246] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31522957 [JettyServerThreadPool-280] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31522957 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31532954 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31532954 [JettyServerThreadPool-246] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31532969 [JettyServerThreadPool-246] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31532969 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31542955 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31542955 [JettyServerThreadPool-246] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31542966 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31542967 [JettyServerThreadPool-280] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31553096 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31553096 [JettyServerThreadPool-246] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31553105 [JettyServerThreadPool-246] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31553106 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31563094 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31563094 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31563105 [JettyServerThreadPool-246] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31563105 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31572957 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31572957 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31572961 [JettyServerThreadPool-246] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31572961 [JettyServerThreadPool-289] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31574090 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31574093 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31574102 [JettyServerThreadPool-246] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31574103 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31574104 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31574105 [JettyServerThreadPool-281] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31582964 [JettyServerThreadPool-280] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31582964 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31582973 [JettyServerThreadPool-281] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31582973 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31592960 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31592960 [JettyServerThreadPool-281] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31592971 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31592971 [JettyServerThreadPool-280] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31602954 [JettyServerThreadPool-281] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31602955 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31602963 [JettyServerThreadPool-280] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31602963 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31612956 [JettyServerThreadPool-281] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31612956 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31612967 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31612969 [JettyServerThreadPool-281] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31619227 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31619227 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31619239 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31619239 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31619247 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31619247 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31619252 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31619252 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31623096 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31623096 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31623105 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31623105 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31633099 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31633099 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31633114 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31633115 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31642951 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31642951 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31642956 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31642956 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31653099 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31653100 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31653112 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31653112 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31663091 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31663091 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31663098 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31663098 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31673102 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31673103 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31673117 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31673117 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31682964 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31682964 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31682972 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31682972 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31692958 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31692958 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31692974 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31692974 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31696947 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31696947 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31696953 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31696953 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31696957 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31696958 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31696969 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31696969 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31697656 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31697656 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31697667 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31697673 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31697676 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31697676 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31697679 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31697679 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31702662 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31702667 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31702678 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31702680 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31702948 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31702948 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31702953 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31702953 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31712952 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31712952 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31712961 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31712964 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31722182 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31722182 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31722328 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31722329 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31722352 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31722352 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31722375 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31722375 [JettyServerThreadPool-287] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31732345 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31732345 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31732355 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31732356 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31742344 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31742346 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31742356 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31742356 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31752332 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31752332 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31752346 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31752346 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31762340 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31762340 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31762351 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31762351 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31772331 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31772332 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31772341 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31772341 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31782346 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31782346 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31782362 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31782363 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31792333 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31792339 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31792345 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31792345 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31802342 [JettyServerThreadPool-114] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31802342 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31802354 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31802355 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31812332 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31812332 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31812347 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31812349 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31822331 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31822331 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31822344 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31822345 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31832342 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31832342 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31832358 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31832358 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31842332 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31842332 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31842346 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31842347 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31852337 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31852338 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31852344 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31852345 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31852594 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31852594 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31852602 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31852602 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31854077 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31854078 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31854082 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31854083 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31858359 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31858361 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31858375 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31858375 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31858929 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31858929 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31858942 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31858942 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31862606 [JettyServerThreadPool-219] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31862606 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31862614 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31862614 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31864906 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31864906 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31864908 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31864908 [JettyServerThreadPool-224] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31874918 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31874918 [JettyServerThreadPool-224] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31874928 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31874930 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31884918 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31884918 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31884926 [JettyServerThreadPool-224] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31884926 [JettyServerThreadPool-292] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31894922 [JettyServerThreadPool-293] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31894922 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31894933 [JettyServerThreadPool-280] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31894933 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31900877 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31900877 [JettyServerThreadPool-280] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31901019 [JettyServerThreadPool-293] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31901019 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31901044 [JettyServerThreadPool-280] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31901044 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31901053 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31901053 [JettyServerThreadPool-293] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31911096 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31911097 [JettyServerThreadPool-293] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31911102 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31911103 [JettyServerThreadPool-280] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31921087 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31921088 [JettyServerThreadPool-280] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31921094 [JettyServerThreadPool-293] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31921095 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31931025 [JettyServerThreadPool-293] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31931025 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31931033 [JettyServerThreadPool-280] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31931033 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31941033 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31941034 [JettyServerThreadPool-280] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31941038 [JettyServerThreadPool-293] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31941038 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31951082 [JettyServerThreadPool-259] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31951082 [JettyServerThreadPool-293] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31951087 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31951088 [JettyServerThreadPool-280] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31961097 [JettyServerThreadPool-280] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31961098 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31961104 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31961104 [JettyServerThreadPool-293] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31971088 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31971088 [JettyServerThreadPool-297] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31971093 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31971094 [JettyServerThreadPool-293] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31981085 [JettyServerThreadPool-297] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31981085 [JettyServerThreadPool-293] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31981094 [JettyServerThreadPool-293] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31981094 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31982093 [JettyServerThreadPool-297] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31982093 [JettyServerThreadPool-285] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31982098 [JettyServerThreadPool-293] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31982098 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31993096 [JettyServerThreadPool-293] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31993099 [JettyServerThreadPool-297] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31993105 [JettyServerThreadPool-297] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+31993105 [JettyServerThreadPool-294] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Malformed JSON Supplied
+2634288 [JettyServerThreadPool-86] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+2689532 [JettyServerThreadPool-86] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+3413561 [JettyServerThreadPool-70] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+3414757 [JettyServerThreadPool-92] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/login 200 Invalid user name or password
+8038400 [JettyServerThreadPool-65] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+8042022 [JettyServerThreadPool-124] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+8049949 [JettyServerThreadPool-124] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+8050940 [JettyServerThreadPool-125] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+8064372 [JettyServerThreadPool-124] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+8065780 [JettyServerThreadPool-125] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists
+8082822 [JettyServerThreadPool-125] ERROR dk.lyngby.routes.Routes - POST /api/v1/auth/register 200 Username already exists

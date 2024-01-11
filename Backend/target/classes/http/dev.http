@@ -1,0 +1,34 @@
+GET {{url}}/products/fish
+Authorization: Bearer {{token}}
+
+###
+POST {{url}}/products
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "productName": "Angelfish",
+  "productPrice": 7,
+  "productCategory": "Fish",
+  "productText": "Pterophyllum scalare"
+}
+###
+POST {{url}}/products
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "productName": "Clownfish",
+  "productPrice": 15,
+  "productCategory": "Boat",
+  "productText": "Amphiprioninae",
+  "productImage": "src/assets/images/gramma.jpg"
+}
+###
+POST {{url}}/carts/2/products/1
+Authorization: Bearer {{token}}
+
+###
+GET {{url}}/carts
+Authorization: Bearer {{token}}
+
